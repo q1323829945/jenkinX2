@@ -11,7 +11,7 @@ spec:
       taskSpec:
         metadata: {}
         stepTemplate:
-          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/environment/release.yaml@versionStream
+          image: uses:q1323829945/my-jx3-pipeline-catalog/tasks/environment/release.yaml@versionStream
           name: ""
           resources:
             # override limits for all containers here
@@ -20,7 +20,7 @@ spec:
               memory: 256Mi
           workingDir: /workspace/source
         steps:
-        - image: uses:jenkins-x/jx3-pipeline-catalog/tasks/git-clone/git-clone.yaml@versionStream
+        - image: uses:q1323829945/my-jx3-pipeline-catalog/tasks/git-clone/git-clone.yaml@versionStream
           name: ""
           resources: {}
         - name: admin-log
