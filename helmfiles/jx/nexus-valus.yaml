@@ -3,6 +3,3 @@ persistence:
   size: 20Gi
   storageClass: csi-obs
   accessMode: ReadWriteMany
-image:
-  repository: sonatype/nexus3
-  tag: 3.30.0
