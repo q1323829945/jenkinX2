@@ -5,7 +5,7 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: https://nexus-jx.saas-ops.finline.app
+    chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
     clusterName: kind
     devEnvApprovers:
     - todo
