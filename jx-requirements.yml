@@ -5,7 +5,6 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
     clusterName: kind
     devEnvApprovers:
     - todo
@@ -28,7 +27,7 @@ spec:
       enabled: true
       production: false
       secretName: jx-privkey
-  repository: bucketrepo
+  repository: nexus
   secretStorage: local
   vault: {}
   webhook: lighthouse
