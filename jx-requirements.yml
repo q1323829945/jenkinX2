@@ -13,12 +13,14 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: ghcr.io
+    registry: nexus-docker.saas-ops.finline.app
   environments:
   - key: dev
   - key: staging
   - key: production
   ingress:
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: "1000m"
     domain: saas-ops.finline.app
     externalDNS: false
     namespaceSubDomain: -jx.
