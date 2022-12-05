@@ -57,7 +57,7 @@ releases:
   - ../../versionStream/charts/jxgh/health-checks-jx/values.yaml.gotmpl
   - jx-values.yaml
 releases:
-- chart: stable\chartmuseum
+- chart: stable/chartmuseum
   version: 2.14.2
   name: chartmuseum
   values:
