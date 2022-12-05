@@ -4,6 +4,7 @@ helmfiles:
 - path: helmfiles/kuberhealthy/helmfile.yaml
 - path: helmfiles/nginx/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
-- path: helmfiles/chartmuseum/helmfile.yaml
+releases:
+- chart: ./charts/mycharts
 templates: {}
 renderedvalues: {}

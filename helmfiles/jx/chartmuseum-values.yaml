@@ -1,0 +1,17 @@
+service:
+  targetPort: 8080
+persistence:
+  enabled: true 
+  accessMode: ReadWriteMany
+  storageClass: csi-obs 
+env: 
+  secret: 
+    BASIC_AUTH_USER: admin
+    BASIC_AUTH_PASS: admin
+  open:
+    DISABLE_API: false
+    AUTH_ANONYMOUS_GET: true
+secret:
+  labels:
+    jenkins.io/credentials-type: usernamePassword
+    
