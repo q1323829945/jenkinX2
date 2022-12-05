@@ -7,8 +7,6 @@ namespace: jx
 repositories:
 - name: stable
   url: https://charts.helm.sh/stable
-- name: chartmuseum
-  url: https://artifacthub.io/packages/helm/choerodon/chartmuseum
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
 releases:
