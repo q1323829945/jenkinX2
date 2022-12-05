@@ -17,6 +17,9 @@ spec:
   environments:
   - key: dev
   - key: staging
+    owner: q1323829945
+    repository: production
+    remoteCluster: true
   - key: production
   ingress:
     annotations:
