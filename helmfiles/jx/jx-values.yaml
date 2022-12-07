@@ -21,7 +21,7 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: kind
     devEnvApprovers:
     - todo
@@ -30,19 +30,29 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: ghcr.io
+    registry: nexus-docker.saas-ops.finline.app
   environments:
   - key: dev
+    owner: q1323829945
+    repository: jenkinX2
   - key: staging
+    owner: q1323829945
+    remoteCluster: true
+    repository: production
   - key: production
   ingress:
-    domain: change.me
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: 1000m
+    domain: saas-ops.finline.app
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
+      email: lizheng2@sunline.cn
+      enabled: true
       production: false
+      secretName: jx-privkey
+  pipelineUser:
+    username: q1323829945
   repository: nexus
   secretStorage: local
   vault: {}
@@ -50,7 +60,7 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
-  enabled: false
+  enabled: true
 jxRequirementsKuberhealthy:
   enabled: false
 jxRequirementsTLSCheck:

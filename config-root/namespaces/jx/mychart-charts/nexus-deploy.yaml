@@ -1,0 +1,37 @@
+# Source: mychart/templates/nexus.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nexus
+  namespace: jx
+  annotations:
+    meta.helm.sh/release-name: 'charts'
+    wave.pusher.com/update-on-config-change: 'true'
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nexus
+  template:
+    metadata:
+      labels:
+        app: nexus
+    spec:
+      imagePullSecrets:
+      - name: huawei-key
+      containers:
+      - name: nexus
+        image: swr.ap-southeast-3.myhuaweicloud.com/loansaas/saas/nexus3:3.30.0
+        ports:
+        - containerPort: 8081
+        - containerPort: 8082
+        - containerPort: 8083
+        volumeMounts:
+        - mountPath: /nexus-data
+          name: nexus-data
+      volumes:
+      - name: nexus-data
+        persistentVolumeClaim:
+          claimName: nexus-pvc

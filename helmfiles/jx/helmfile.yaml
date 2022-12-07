@@ -62,5 +62,6 @@ releases:
   values:
   - ../../versionStream/charts/stable/chartmuseum/values.yaml.gotmpl
   - chartmuseum-values.yaml
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

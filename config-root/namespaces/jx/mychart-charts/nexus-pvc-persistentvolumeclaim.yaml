@@ -1,0 +1,21 @@
+# Source: mychart/templates/nexus.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nexus-pvc
+  namespace: jx
+  labels:
+    app: nexus
+    chart: nexus-0.1.41
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+    heritage: Helm
+    release: nexus
+  annotations:
+    meta.helm.sh/release-name: 'charts'
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: csi-obs

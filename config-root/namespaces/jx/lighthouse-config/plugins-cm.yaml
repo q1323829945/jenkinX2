@@ -1,0 +1,90 @@
+apiVersion: v1
+data:
+  plugins.yaml: |
+    approve:
+    - lgtm_acts_as_approve: true
+      repos:
+      - q1323829945/jenkinX2
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - q1323829945/production
+      require_self_approval: true
+    cat: {}
+    cherry_pick_unapproved: {}
+    config_updater:
+      gzip: false
+      maps:
+        env/prow/job.yaml:
+          name: config
+        env/prow/plugins.yaml:
+          name: plugins
+    external_plugins:
+      q1323829945/jenkinX2:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      q1323829945/production:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+    heart: {}
+    label:
+      additional_labels: null
+    owners: {}
+    plugins:
+      q1323829945/jenkinX2:
+      - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      q1323829945/production:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+    requiresig: {}
+    sigmention: {}
+    size:
+      l: 0
+      m: 0
+      s: 0
+      xl: 0
+      xxl: 0
+    triggers:
+    - repos:
+      - q1323829945/jenkinX2
+      trusted_org: todo
+    - repos:
+      - q1323829945/production
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: plugins
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
