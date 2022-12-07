@@ -20,10 +20,10 @@ spec:
     owner: q1323829945
     repository: jenkinX2
   - key: staging
+    namespace: my-staging
     owner: q1323829945
     remoteCluster: true
     repository: production
-    namespace: my-staging
   - key: production
   ingress:
     annotations:

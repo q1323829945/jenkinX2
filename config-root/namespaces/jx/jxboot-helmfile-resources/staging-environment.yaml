@@ -4,7 +4,7 @@ kind: Environment
 metadata:
   labels:
     env: "staging"
-    team: jx
+    team: my-staging
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: "staging"
   annotations:
@@ -16,7 +16,7 @@ spec:
     url: https://github.com/q1323829945/production.git
   kind: Permanent
   label: Staging
-  namespace: jx-staging
+  namespace: my-staging
   promotionStrategy: "Auto"
   order: 100
   remoteCluster: true
