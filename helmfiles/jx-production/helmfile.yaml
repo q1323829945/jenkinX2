@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: https://chartmuseum-jx.saas-ops.finline.app
+releases:
+- chart: dev/h5-test
+  version: 0.0.2
+  name: h5-test
+templates: {}
+renderedvalues: {}
