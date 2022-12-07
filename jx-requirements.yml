@@ -23,6 +23,7 @@ spec:
     owner: q1323829945
     remoteCluster: true
     repository: production
+    namespace: my-staging
   - key: production
   ingress:
     annotations:
