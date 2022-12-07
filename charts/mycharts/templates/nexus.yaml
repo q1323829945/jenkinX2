@@ -45,7 +45,7 @@ spec:
         - mountPath: /nexus-data
           name: nexus-data
       volumes:
-        - name: nexus-data-volume
+        - name: nexus-data
           persistentVolumeClaim:
             claimName: nexus-pvc
 ---
