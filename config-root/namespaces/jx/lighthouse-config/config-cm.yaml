@@ -9,6 +9,7 @@ data:
       enabled:
         q1323829945/jenkinX2: true
         q1323829945/production: true
+        q1323829945/test2: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         q1323829945/jenkinX2: merge
         q1323829945/production: merge
+        q1323829945/test2: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - q1323829945/jenkinX2
         - q1323829945/production
+        - q1323829945/test2
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - q1323829945/jenkinX2
         - q1323829945/production
+        - q1323829945/test2
       target_url: http://lighthouse-jx.saas-ops.finline.app/merge/status
 kind: ConfigMap
 metadata:
