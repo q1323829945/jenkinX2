@@ -183,3 +183,18 @@
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
     version: 0.3.0
+- namespace: jx-production
+  path: helmfiles/jx-production/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.0.3
+    description: A Helm chart for Kubernetes
+    firstDeployed: "2022-12-08T02:40:04Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    lastDeployed: "2022-12-08T02:40:04Z"
+    name: h5-test
+    releaseName: h5-test
+    repositoryName: dev
+    repositoryUrl: https://chartmuseum-jx.saas-ops.finline.app
+    resourcePath: config-root/namespaces/jx-production/h5-test
+    version: 0.0.3
