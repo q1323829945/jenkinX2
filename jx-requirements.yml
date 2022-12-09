@@ -17,6 +17,7 @@ spec:
     registry: nexus-docker.saas-ops.finline.app
   environments:
   - key: mydev
+    promotionStrategy: Auto
     namespace: mydev
     owner: q1323829945
     repository: jenkinX2
