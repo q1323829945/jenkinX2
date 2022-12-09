@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: mydev
 repositories:
 - name: dev
@@ -7,5 +11,7 @@ releases:
 - chart: dev/h52
   version: 0.0.10
   name: h52
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
