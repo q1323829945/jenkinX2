@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: h5-test
+    - name: h52
     - name: test2
     scheduler: in-repo
   slack:
