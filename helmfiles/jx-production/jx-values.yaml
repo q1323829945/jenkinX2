@@ -33,6 +33,7 @@ jxRequirements:
     registry: nexus-docker.saas-ops.finline.app
   environments:
   - key: dev
+    namespace: mydev
     owner: q1323829945
     repository: jenkinX2
   - key: staging
