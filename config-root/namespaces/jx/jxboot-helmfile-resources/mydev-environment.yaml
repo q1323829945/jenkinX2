@@ -17,5 +17,5 @@ spec:
   kind: Permanent
   label: Mydev
   order: 500
-  promotionStrategy: "Manual"
+  promotionStrategy: "Auto"
   namespace: "mydev"
