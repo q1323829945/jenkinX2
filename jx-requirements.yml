@@ -20,9 +20,6 @@ spec:
     namespace: mydev
     owner: q1323829945
     repository: jenkinX2
-  - key: dev
-    owner: q1323829945
-    repository: jenkinX2
   - key: staging
     namespace: my-staging
     owner: q1323829945
