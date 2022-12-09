@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - q1323829945/jenkinX2
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - q1323829945/production
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -142,6 +146,9 @@ data:
       xl: 0
       xxl: 0
     triggers:
+    - repos:
+      - q1323829945/jenkinX2
+      trusted_org: todo
     - repos:
       - q1323829945/jenkinX2
       trusted_org: todo

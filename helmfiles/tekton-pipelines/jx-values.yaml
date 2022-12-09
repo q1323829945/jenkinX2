@@ -32,8 +32,11 @@ jxRequirements:
     provider: kubernetes
     registry: nexus-docker.saas-ops.finline.app
   environments:
-  - key: dev
+  - key: mydev
     namespace: mydev
+    owner: q1323829945
+    repository: jenkinX2
+  - key: dev
     owner: q1323829945
     repository: jenkinX2
   - key: staging

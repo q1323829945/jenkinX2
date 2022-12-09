@@ -4,7 +4,7 @@ kind: Environment
 metadata:
   labels:
     env: "dev"
-    team: mydev
+    team: jx
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: "dev"
   annotations:
@@ -16,7 +16,7 @@ spec:
     url: https://github.com/q1323829945/jenkinX2.git
   kind: Development
   label: Development
-  namespace: mydev
+  namespace: jx
   promotionStrategy: "Never"
   webHookEngine: "Lighthouse"
   teamSettings:
