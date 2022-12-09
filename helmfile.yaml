@@ -4,6 +4,7 @@ helmfiles:
 - path: helmfiles/kuberhealthy/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
 - path: helmfiles/jx-production/helmfile.yaml
+- path: helmfiles/mydev/helmfile.yaml
 releases:
 - chart: ./charts/mycharts
   name: charts

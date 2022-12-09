@@ -1,0 +1,17 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: mydev
+repositories:
+- name: dev
+  url: https://chartmuseum-jx.saas-ops.finline.app
+releases:
+- chart: dev/h52
+  version: 0.0.10
+  name: h52
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}
