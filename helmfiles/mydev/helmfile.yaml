@@ -9,7 +9,7 @@ repositories:
   url: https://chartmuseum-jx.saas-ops.finline.app
 releases:
 - chart: dev/h52
-  version: 0.0.13
+  version: 0.0.14
   name: h52
   values:
   - jx-values.yaml
