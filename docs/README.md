@@ -102,6 +102,13 @@
 	      <td></td>
 	    </tr>
     <tr>
+	      <td>h52</td>
+	      <td title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> h52</td>
+	      <td>0.0.25</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='5'><h3>mydev</h3></td>
 		    </tr>
 	    <tr>
