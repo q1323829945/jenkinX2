@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        q1323829945/cucumber-test: true
         q1323829945/h5-test: true
         q1323829945/h52: true
         q1323829945/jenkinX2: true
@@ -23,6 +24,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        q1323829945/cucumber-test: merge
         q1323829945/h5-test: merge
         q1323829945/h52: merge
         q1323829945/jenkinX2: merge
@@ -40,6 +42,7 @@ data:
         repos:
         - q1323829945/jenkinX2
         - q1323829945/production
+        - q1323829945/cucumber-test
         - q1323829945/h5-test
         - q1323829945/h52
         - q1323829945/test2
@@ -54,6 +57,7 @@ data:
         repos:
         - q1323829945/jenkinX2
         - q1323829945/production
+        - q1323829945/cucumber-test
         - q1323829945/h5-test
         - q1323829945/h52
         - q1323829945/test2

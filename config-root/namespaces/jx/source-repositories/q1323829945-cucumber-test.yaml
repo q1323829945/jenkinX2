@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: q1323829945
+    provider: github
+    repository: cucumber-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: q1323829945-cucumber-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/q1323829945/cucumber-test.git
+  org: q1323829945
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: cucumber-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/q1323829945/cucumber-test

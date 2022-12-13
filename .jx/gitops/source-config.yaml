@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: cucumber-test
     - name: h5-test
     - name: h52
     - name: test2
