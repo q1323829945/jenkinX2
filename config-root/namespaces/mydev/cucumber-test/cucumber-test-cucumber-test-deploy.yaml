@@ -1,0 +1,28 @@
+# Source: cucumber-test/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cucumber-test-cucumber-test
+  labels:
+    app: cucumber-test-cucumber-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'cucumber-test'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: mydev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cucumber-test-cucumber-test
+  template:
+    metadata:
+      labels:
+        app: cucumber-test-cucumber-test
+    spec:
+      containers:
+      - name: cucumber-test
+        image: "nexus-docker.saas-ops.finline.app/q1323829945/cucumber-test:1670911938-beta"
+        ports:
+        - containerPort: 8102
+        imagePullPolicy: Always

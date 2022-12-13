@@ -1,0 +1,17 @@
+# Source: cucumber-test/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: cucumber-test
+  annotations:
+    meta.helm.sh/release-name: 'cucumber-test'
+  namespace: mydev
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8102
+    targetPort: 8102
+  selector:
+    app: cucumber-test-cucumber-test

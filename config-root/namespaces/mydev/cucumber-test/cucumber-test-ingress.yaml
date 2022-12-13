@@ -1,0 +1,28 @@
+# Source: cucumber-test/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/proxy-body-size: 1000m
+    meta.helm.sh/release-name: 'cucumber-test'
+  name: cucumber-test
+  namespace: mydev
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+  - http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: cucumber-test
+            port:
+              number: 8102
+        path: /
+    host: cucumber-test-mydev.saas-ops.finline.app
+  tls:
+  - hosts:
+    - cucumber-test-mydev.saas-ops.finline.app
+    secretName: "jx-privkey"
