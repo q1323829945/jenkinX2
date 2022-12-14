@@ -21,8 +21,8 @@ spec:
             port:
               number: 8071
         path: /
-    host: cucumber-test-mydev.saas-ops.finline.app
+    host: loan-management-mydev.saas-ops.finline.app
   tls:
   - hosts:
-    - cucumber-test-mydev.saas-ops.finline.app
+    - loan-management-mydev.saas-ops.finline.app
     secretName: "jx-privkey"
