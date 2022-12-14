@@ -11,7 +11,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 8102
-    targetPort: 8102
+  - port: 8071
+    targetPort: 8071
   selector:
     app: cucumber-test-cucumber-test

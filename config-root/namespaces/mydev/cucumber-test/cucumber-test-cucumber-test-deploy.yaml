@@ -19,10 +19,14 @@ spec:
     metadata:
       labels:
         app: cucumber-test-cucumber-test
+      annotations:
+        dapr.io/app-id: app-loan-management
+        dapr.io/app-port: "8071"
+        dapr.io/enabled: "true"
     spec:
       containers:
       - name: cucumber-test
-        image: "nexus-docker.saas-ops.finline.app/q1323829945/cucumber-test:1670986722-beta"
+        image: "nexus-docker.saas-ops.finline.app/q1323829945/cucumber-test:1670989116-beta"
         ports:
-        - containerPort: 8102
+        - containerPort: 8071
         imagePullPolicy: Always
