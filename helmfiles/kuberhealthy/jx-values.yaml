@@ -30,7 +30,7 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: nexus-docker.saas-ops.finline.app
+    registry: nexus.jx.svc.cluster.local:8082
   environments:
   - key: mydev
     namespace: mydev
