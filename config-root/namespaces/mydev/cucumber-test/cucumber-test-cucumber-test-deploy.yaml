@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: cucumber-test
-        image: "nexus-docker.saas-ops.finline.app/q1323829945/cucumber-test:1670997254-beta"
+        image: "nexus-docker.saas-ops.finline.app/q1323829945/cucumber-test:0.0.1"
         ports:
         - containerPort: 8071
         imagePullPolicy: Always
