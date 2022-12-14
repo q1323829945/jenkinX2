@@ -14,7 +14,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev/cucumber-test
-  version: 1670997254-beta
+  version: 0.0.1
   name: cucumber-test
   values:
   - jx-values.yaml
