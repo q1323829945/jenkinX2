@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: q1323829945
+    provider: github
+    repository: obs
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: q1323829945-obs
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/q1323829945/obs.git
+  org: q1323829945
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: obs
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/q1323829945/obs
