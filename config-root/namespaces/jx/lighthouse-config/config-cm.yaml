@@ -11,6 +11,7 @@ data:
         q1323829945/h5-test: true
         q1323829945/h52: true
         q1323829945/jenkinX2: true
+        q1323829945/obs: true
         q1323829945/production: true
         q1323829945/test2: true
     plank: {}
@@ -28,6 +29,7 @@ data:
         q1323829945/h5-test: merge
         q1323829945/h52: merge
         q1323829945/jenkinX2: merge
+        q1323829945/obs: merge
         q1323829945/production: merge
         q1323829945/test2: merge
       queries:
@@ -45,6 +47,7 @@ data:
         - q1323829945/cucumber-test
         - q1323829945/h5-test
         - q1323829945/h52
+        - q1323829945/obs
         - q1323829945/test2
       - labels:
         - updatebot
@@ -60,6 +63,7 @@ data:
         - q1323829945/cucumber-test
         - q1323829945/h5-test
         - q1323829945/h52
+        - q1323829945/obs
         - q1323829945/test2
       target_url: http://lighthouse-jx.saas-ops.finline.app/merge/status
 kind: ConfigMap
