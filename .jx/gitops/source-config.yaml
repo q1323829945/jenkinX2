@@ -11,6 +11,7 @@ spec:
     - name: cucumber-test
     - name: h5-test
     - name: h52
+    - name: obs
     - name: test2
     scheduler: in-repo
   slack:
