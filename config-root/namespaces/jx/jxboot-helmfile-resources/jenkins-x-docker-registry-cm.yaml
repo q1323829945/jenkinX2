@@ -11,4 +11,4 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kaniko.flags: "--skip-unused-stages --snapshotMode=redo"
-  docker.registry: nexus.jx.svc.cluster.local:8082
+  docker.registry: nexus-docker.saas-ops.finline.app
