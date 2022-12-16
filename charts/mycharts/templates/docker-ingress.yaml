@@ -27,3 +27,33 @@ spec:
     secretName: jx-privkey
 status:
   loadBalancer: {}
+--- 
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "1000m"
+    kubernetes.io/ingress.class: nginx
+  generation: 1
+  labels:
+    gitops.jenkins-x.io/pipeline: namespaces
+  name: docker-public-ingress
+  namespace: jx
+spec:
+  rules:
+  - host: docker.saas-ops.finline.app
+    http:
+      paths:
+      - backend:
+          service:
+            name: nexus
+            port:
+              number: 8083
+        path: /
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - nexus-docker.saas-ops.finline.app
+    secretName: jx-privkey
+status:
+  loadBalancer: {}
