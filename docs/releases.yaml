@@ -202,17 +202,17 @@
   path: helmfiles/mydev/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.1.2-SNAPSHOT
+    appVersion: 0.1.4-SNAPSHOT
     description: A Helm chart for Kubernetes
-    firstDeployed: "2022-12-20T01:18:17Z"
+    firstDeployed: "2022-12-20T03:11:26Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2022-12-20T01:18:17Z"
+    lastDeployed: "2022-12-20T03:11:26Z"
     name: h52
     releaseName: h52
     repositoryName: dev
     repositoryUrl: https://chartmuseum-jx.saas-ops.finline.app
     resourcePath: config-root/namespaces/mydev/h52
-    version: 0.1.2-SNAPSHOT
+    version: 0.1.4-SNAPSHOT
   - apiVersion: v1
     appVersion: 1671502205-SNAPSHOT
     description: A Helm chart for Kubernetes
