@@ -214,14 +214,14 @@
     resourcePath: config-root/namespaces/mydev/h52
     version: 0.1.2-SNAPSHOT
   - apiVersion: v1
-    appVersion: 0.0.1-SNAPSHOT
+    appVersion: 1671502205-SNAPSHOT
     description: A Helm chart for Kubernetes
-    firstDeployed: "2022-12-14T07:49:27Z"
+    firstDeployed: "2022-12-20T02:18:58Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2022-12-14T07:49:27Z"
+    lastDeployed: "2022-12-20T02:18:58Z"
     name: cucumber-test
     releaseName: cucumber-test
     repositoryName: dev
     repositoryUrl: https://chartmuseum-jx.saas-ops.finline.app
     resourcePath: config-root/namespaces/mydev/cucumber-test
-    version: 0.0.1-SNAPSHOT
+    version: 1671502205-SNAPSHOT
